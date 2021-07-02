@@ -61,3 +61,27 @@ header nav ul li a:hover{
     border-radius: 5px;
 }
 /* end of header section*/
+
+/*footer part of web page*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--primary-color);
+    padding: 15px 35px;
+}
+footer p{
+    font-size: 1.1vw;
+    color:var(--tertiary-color);
+    font-family: 'Tinos', serif;
+}
+footer img{
+    height:40px;
+    padding: 4px;
+}
+footer div a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+    padding:10px 10px;
+}
+/*end of footer part*/
