@@ -107,9 +107,61 @@ footer div a{
 .about p{
     font-size: 2vw;
     text-align: justify;
-    margin:2% 0;
+    margin-top:2%;
 }
 /* end of about me section */
+
+/* Work section */
+.work{
+    margin:2% 10% 0 10%;
+}
+.work-tab{
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.work-tab button{
+    border: none;
+    cursor:pointer;
+    padding:14px 15px;
+    font-size: 1.5vw;
+    transition: 0.3s;
+}
+.work-tab button:hover{
+  background-color: #ddd;
+}
+.work-tab button.active{
+    background-color: #ccc;
+}
+.work-tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height:30vw;
+}
+.work-tab-content img{
+    width: 25%;
+}
+.work-tab-content div{
+    padding: 0 20px;
+}
+.work-tab-content div h3{
+    font-size: 1.5vw;
+}
+.work-tab-content p{
+    font-size: 1.3vw;
+    text-align: justify;
+    padding: 2px 0;
+}
+.work-tab-content div h4, .work-tab-content div a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    padding: 2px 0;
+}
+/* end of work section */
 
 /*animation for the page*/
 @keyframes hero-text {
