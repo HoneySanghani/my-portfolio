@@ -1,1 +1,256 @@
+:root{
+    --primary-color:#333;
+    --secondary-color:black;
+    --tertiary-color:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header section of the page */
 
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 35px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+header a{
+    text-decoration: none;
+}
+.logo{
+    width: 6%;
+}
+/* navigation links*/
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a{
+    padding: 10px 35px;
+    font-weight: lighter;
+    font-size: 2vw;
+    color: var(--tertiary-color);
+    font-family: 'Tinos', serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 2.5);
+}
+header nav ul li a:hover{
+    text-shadow: none;
+    background-color: var(--tertiary-color);
+    color: black;
+}
+/* end of header section*/
+
+/*footer part of web page*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--primary-color);
+    padding: 15px 35px;
+}
+footer p{
+    font-size: 1.1vw;
+    color:var(--tertiary-color);
+    font-family: 'Tinos', serif;
+}
+footer img{
+    height:40px;
+    padding: 4px;
+}
+footer div a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+    padding:10px 30px;
+}
+/*end of footer part*/
+
+/*Hero section start*/
+.hero{
+    overflow: hidden;
+}
+.hero img{
+    width: 100%;
+}
+.hero h1{
+    text-align: center;
+    font-family: Georgia;
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding:1vw;
+    animation: hero-text 2s 1;
+}
+/*Hero section end*/
+
+/* common section properties*/
+.section-title{
+    font-size: 2.5vw;
+    font-family: 'Tinos', serif;
+}
+.space{
+    margin:2% 10% 0 10%;
+    animation: section-animation 2s 1;  
+}
+
+/* about me section */
+.about p{
+    font-size: 2vw;
+    text-align: justify;
+    margin-top:2%;
+}
+/* end of about me section */
+
+/* Work section */
+.work-tab{
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.work-tab button{
+    border: none;
+    cursor:pointer;
+    padding:14px 15px;
+    font-size: 1.5vw;
+    transition: 0.3s;
+}
+.work-tab button:hover{
+  background-color: #ddd;
+}
+.work-tab button.active{
+    background-color: #ccc;
+}
+.work-tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height:30vw;
+}
+.work-tab-content img{
+    width: 25%;
+}
+.work-tab-content div{
+    padding: 0 20px;
+}
+.work-tab-content div h3{
+    font-size: 1.5vw;
+}
+.work-tab-content p{
+    font-size: 1.5vw;
+    text-align: justify;
+    padding: 2px 0;
+}
+.work-tab-content div a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    padding: 2px 0;
+}
+.work-tab-content div h4{
+    font-size: 1.3vw;
+    padding: 2px 0;
+}
+/* end of work section */
+
+/* contact section*/
+.contact{
+    margin:2% 10%;
+}
+.contact-flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2%;
+}
+.contact-flex-container div a{
+    text-decoration: none;
+    color:var(--primary-color);
+    font-size: 5vw;
+}
+.contact-flex-container div p{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.contact-flex-container div a:hover{
+    text-shadow: 3px 3px black;
+}
+/*end of contact section*/
+
+/*animation for the page*/
+@keyframes hero-text {
+    80%{
+        letter-spacing: 18px;
+    }
+}
+@keyframes section-animation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*media queries for smaller desktop screens*/
+@media screen and (max-width:980px) {
+    @keyframes hero-text{
+        80%{
+            letter-spacing: 10px;
+        }
+    }
+}
+/*media queries for tablet and smaller screens*/
+@media screen and (max-width:768px) {
+   footer div a{
+       padding:10px 15px;
+   }
+   footer img{
+       height:35px;
+   }
+}
+/*media queries for mobile phones and smaller*/
+@media screen and (max-width:575px) {
+    footer{
+        flex-direction: column;
+    }
+    footer img{
+        order:-1;
+        height:30px;
+    }
+    footer p{
+        order:1;
+    }
+    header nav ul li a{
+        padding: 10px 10px;
+        font-size: 2vw;
+    }
+    @keyframes hero-text{
+        80%{
+            letter-spacing: 8px;
+        }
+    }
+}
+/*media queries for more smaller screen*/
+@media screen and (max-width:350px) {
+    @keyframes hero-text{
+        80%{
+            letter-spacing: 4px;
+        }
+    }
+}

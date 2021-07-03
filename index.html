@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,149 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Honey Sanghani</title>
 </head>
-<body>
 
+<body>
+    <!--Header section with navigation links-->
+    <header>
+        <!--Logo for the website-->
+        <img src="./assests/images/logo.png" class="logo" alt="Logo" />
+        <!--navigation bar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="./assests/documents/resume.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--End of header section-->
+
+    <!--hero section-->
+    <section class="hero">
+        <img src="./assests/images/hero-image.jpg" alt="Honey Sanghani Image" />
+        <hr />
+        <h1 class="welcome">Full-Stack Developer|Engineer</h1>
+        <hr />
+    </section>
+    <!--end of hero section-->
+
+    <!--about me section-->
+    <section class="about space" id="about-me">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            Hi my name is Honey Sanghani and I am Information and Communication Technology Engineer.I completed my
+            Bachelor's from L.J Institute of engineering and technology in Gujrat, India. Last year me and family moved
+            to canada and currently I am living in Brandon Mb.Currently I am entrolled in University of Toronto
+            continuing studies Bootcamp for Full Stack development.My hobby is to sketch and explore new food to eat. In
+            my free time I like to watch Si-Fi Tv shows and I am a Marvel fan.Well as a child I just don't want to stop
+            learning and stop creating because getting creative is what I love and what I want to do.Programming is
+            exactly the thing I want in my life as you can learn as much you can , create what ever you want, design
+            constantly and get creative everyday.There is no end, so here I am improving myself and making my own world.
+        </p>
+    </section>
+    <!--end of about me section-->
+
+    <!--work section of the page-->
+    <section class="work space" id="work">
+        <h2 class="section-title">Work</h2>
+        <!--tab buttons-->
+        <div class="tab">
+            <div class="work-tab">
+                <button class="work-tab-links" onclick="openWork(event,'horiseon')" id="defaultOpen">Horiseon</button>
+                <button class="work-tab-links" onclick="openWork(event,'run-buddy')">Run Buddy</button>
+                <button class="work-tab-links" onclick="openWork(event,'password-generator')">Password
+                    Generator</button>
+            </div>
+            <!--content for the tabs-->
+            <div class="work-tab-content" id="horiseon">
+                <img src="./assests/images/horiseon.png">
+                <div>
+                    <h3>Horiseon</h3>
+                    <p>
+                        Horiseon is a webpage for marketing agency which has a codebase that follows accessibility
+                        standards so that website is optimized for search engines.It has three section such as search
+                        engine optimization, online reputation management and social media marketing also it has a
+                        benefits section.I was given this project to refactor the code according to the webpage criteria.
+                    </p>
+                    <h4>Languages:HTML/CSS</h4>
+                    <a href="https://honeysanghani.github.io/horiseon/" target="_blank">Click here to see website!</a>
+                </div>
+            </div>
+            <div class="work-tab-content" id="run-buddy">
+                <img src="./assests/images/run-buddy.png">
+                <div>
+                    <h3>Run Buddy</h3>
+                    <p>
+                        Run Buddy, a service that lets runners sign up for personal training and helps them to stay
+                        fit.As a part of Bootcamp we where taught how to make a simple landing page using HTML and css.
+                        Also how to make a responsive website which works on different size devices.This website has
+                        various section and information about Run Buddy also have a privacy policy page ,form and
+                        contact page.
+                    </p>
+                    <h4>Languages:HTML/CSS</h4>
+                    <a href="https://honeysanghani.github.io/run-buddy/" target="_blank">Click here to see website!</a>
+                </div>
+            </div>
+            <div class="work-tab-content" id="password-generator">
+                <p>comming soon!</p>
+            </div>
+        </div>
+        <!--Javascript file-->
+        <script src="./assests/js/script.js"></script>
+    </section>
+    <!--end of work section-->
+
+    <!--contact section start-->
+    <section class="contact space" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-flex-container">
+            <div>
+                <a href="mailto:honeysanghani98@gmail.com" target="_blank" class="fa fa-envelope"></a>
+                <p>E-mail</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/people/Honey-Sanghani/100006886366354" class="fa fa-facebook"
+                    target="_blank"></a>
+                <p>Facebook</p>
+            </div>
+            <div>
+                <a href="https://github.com/HoneySanghani" class="fa fa-github" target="_blank"></a>
+                <p>GitHub</p>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/honey-sanghani-a20674188?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzKOeIHJATv%2BryqinZBRvXg%3D%3D"
+                    class="fa fa-linkedin" target="_blank"></a>
+                <p>Linkedin</p>
+            </div>
+        </div>
+    </section>
+    <!--end of contact section-->
+
+    <!--Footer section start-->
+    <footer>
+        <p>©2021 Honey Sanghani. All rights reserved.</p>
+        <img src="./assests/images/logo.png" alt="Logo" />
+        <div>
+            <a href="https://www.facebook.com/people/Honey-Sanghani/100006886366354" class="fa fa-facebook"
+                target="_blank"></a>
+            <a href="https://github.com/HoneySanghani" class="fa fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/honey-sanghani-a20674188?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzKOeIHJATv%2BryqinZBRvXg%3D%3D"
+                class="fa fa-linkedin" target="_blank"></a>
+        </div>
+    </footer>
+    <!--End of footer section-->
 </body>
+
 </html>
