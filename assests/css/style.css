@@ -194,6 +194,53 @@ footer div a{
 /*animation for the page*/
 @keyframes hero-text {
     80%{
-        letter-spacing: 25px;
+        letter-spacing: 18px;
+    }
+}
+/*media queries for smaller desktop screens*/
+@media screen and (max-width:980px) {
+    @keyframes hero-text{
+        80%{
+            letter-spacing: 10px;
+        }
+    }
+}
+/*media queries for tablet and smaller screens*/
+@media screen and (max-width:768px) {
+   footer div a{
+       padding:10px 15px;
+   }
+   footer img{
+       height:35px;
+   }
+}
+/*media queries for mobile phones and smaller*/
+@media screen and (max-width:575px) {
+    footer{
+        flex-direction: column;
+    }
+    footer img{
+        order:-1;
+        height:30px;
+    }
+    footer p{
+        order:1;
+    }
+    header nav ul li a{
+        padding: 10px 10px;
+        font-size: 2vw;
+    }
+    @keyframes hero-text{
+        80%{
+            letter-spacing: 8px;
+        }
+    }
+}
+/*media queries for more smaller screen*/
+@media screen and (max-width:350px) {
+    @keyframes hero-text{
+        80%{
+            letter-spacing: 4px;
+        }
     }
 }
