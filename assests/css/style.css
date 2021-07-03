@@ -168,12 +168,13 @@ footer div a{
 
 /* contact section*/
 .contact{
-    margin:2% 10% 0 10%;
+    margin:2% 10%;
 }
 .contact-flex-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     margin-top: 2%;
 }
 .contact-flex-container div a{
