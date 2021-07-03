@@ -163,6 +163,30 @@ footer div a{
 }
 /* end of work section */
 
+/* contact section*/
+.contact{
+    margin:2% 10% 0 10%;
+}
+.contact-flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.contact-flex-container div a{
+    text-decoration: none;
+    color:var(--primary-color);
+    font-size: 5vw;
+}
+.contact-flex-container div h4{
+    text-align: center;
+    font-size: 1.5vw;
+}
+.contact-flex-container div a:hover{
+    text-shadow: 3px 3px black;
+}
+/*end of contact section*/
+
 /*animation for the page*/
 @keyframes hero-text {
     80%{
