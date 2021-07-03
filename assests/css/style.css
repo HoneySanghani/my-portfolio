@@ -98,11 +98,12 @@ footer div a{
     font-size: 2.5vw;
     font-family: 'Tinos', serif;
 }
+.space{
+    margin:2% 10% 0 10%;
+    animation: section-animation 2s 1;  
+}
 
 /* about me section */
-.about{
-    margin:2% 10% 0 10%;
-}
 .about p{
     font-size: 2vw;
     text-align: justify;
@@ -111,9 +112,6 @@ footer div a{
 /* end of about me section */
 
 /* Work section */
-.work{
-    margin:2% 10% 0 10%;
-}
 .work-tab{
     border: 1px solid #ccc;
     background-color: #f1f1f1;
@@ -182,9 +180,10 @@ footer div a{
     color:var(--primary-color);
     font-size: 5vw;
 }
-.contact-flex-container div h4{
+.contact-flex-container div p{
     text-align: center;
     font-size: 1.5vw;
+    font-weight: bold;
 }
 .contact-flex-container div a:hover{
     text-shadow: 3px 3px black;
@@ -195,6 +194,17 @@ footer div a{
 @keyframes hero-text {
     80%{
         letter-spacing: 18px;
+    }
+}
+@keyframes section-animation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
     }
 }
 /*media queries for smaller desktop screens*/
