@@ -151,13 +151,17 @@ footer div a{
     font-size: 1.5vw;
 }
 .work-tab-content p{
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     text-align: justify;
     padding: 2px 0;
 }
-.work-tab-content div h4, .work-tab-content div a{
+.work-tab-content div a{
     font-size: 1.5vw;
     text-decoration: none;
+    padding: 2px 0;
+}
+.work-tab-content div h4{
+    font-size: 1.3vw;
     padding: 2px 0;
 }
 /* end of work section */
